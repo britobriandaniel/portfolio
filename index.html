@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Daniel Brito</title>
+    <title>CV y Portfolio de Daniel Brito</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,17 +18,6 @@
             padding: 20px;
             text-align: center;
         }
-        nav {
-            background-color: #005f99;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
         section {
             padding: 20px;
             max-width: 1000px;
@@ -39,14 +28,31 @@
             border-bottom: 2px solid #007ACC;
             padding-bottom: 5px;
         }
-        .contacto a {
-            color: #007ACC;
-            text-decoration: none;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .skill-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
         }
         .galeria {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
+            margin-top: 20px;
         }
         .galeria img {
             width: 100%;
@@ -64,33 +70,46 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio de Daniel Brito</h1>
-        <p>Especialista en Power BI y SQL</p>
+        <h1>Daniel Brito</h1>
+        <p>Business Intelligence | Power BI | SQL | Data Analytics</p>
     </header>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#ejemplos">Ejemplos de Trabajos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <section id="inicio">
-        <h2>Sobre Mí</h2>
-        <p>Hola, soy Daniel Brito, analista en Business Intelligence con experiencia freelance para IC-Consulting, participando en proyectos del sector metalúrgico. Tengo conocimientos en Power BI, SQL, Python y C++.</p>
+    <section>
+        <h2>Perfil Profesional</h2>
+        <p>Apasionado por el análisis de datos y la inteligencia empresarial, con orientación a resultados y aprendizaje continuo. Experiencia desarrollando dashboards y reportes automatizados en Power BI y SQL, siempre enfocado en optimizar la toma de decisiones. Alta adaptabilidad y compromiso con la eficiencia en entornos de alta exigencia.</p>
     </section>
 
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
+    <section>
+        <h2>Habilidades Clave</h2>
+        <div class="skills">
+            <div class="skill-box">✔️ Power BI: Modelado, DAX y visualización avanzada</div>
+            <div class="skill-box">✔️ SQL: Consultas, optimización y manejo de datos</div>
+            <div class="skill-box">✔️ Python básico para análisis de datos</div>
+            <div class="skill-box">✔️ Resolución de problemas y análisis crítico</div>
+            <div class="skill-box">✔️ Presentación efectiva de resultados</div>
+            <div class="skill-box">✔️ Trabajo en equipo y metodologías ágiles</div>
+            <div class="skill-box">✔️ Alta capacidad de aprendizaje</div>
+            <div class="skill-box">✔️ Inglés técnico (intermedio)</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia</h2>
         <ul>
-            <li><strong>Dashboard de Control de Producción:</strong> Desarrollo de reportes para supervisar el rendimiento productivo y tiempos de inactividad.</li>
-            <li><strong>Análisis de Costos:</strong> Implementación de modelos analíticos en Power BI para visualizar costos operativos y proponer mejoras.</li>
+            <li><strong>Freelance BI Developer - IC-Consulting</strong> (2023 - Actualidad)<br>
+            Desarrollo de dashboards y reportes para empresas del sector metalúrgico. Implementación de KPIs clave y soporte en la toma de decisiones estratégicas.</li>
         </ul>
     </section>
 
-    <section id="ejemplos">
-        <h2>Ejemplos de Trabajos</h2>
-        <h3>Análisis de Ventas - Proyecto Destacado</h3>
+    <section>
+        <h2>Proyectos Destacados</h2>
+        <ul>
+            <li><strong>Dashboard de Producción:</strong> Visualización interactiva de la eficiencia y productividad.</li>
+            <li><strong>Reporte de Ventas:</strong> Análisis de rentabilidad y tendencias históricas.</li>
+            <li><strong>Mapas de Distribución:</strong> Reportes geográficos para el seguimiento de ventas regionales.</li>
+        </ul>
+
+        <h3>Ejemplos Visuales</h3>
         <div class="galeria">
             <img src="captura1.png" alt="Portada Análisis de Ventas">
             <img src="captura2.png" alt="Dashboard Ventas - Overview">
@@ -98,9 +117,9 @@
         </div>
     </section>
 
-    <section id="contacto">
+    <section>
         <h2>Contacto</h2>
-        <p class="contacto">
+        <p>
             📧 <a href="mailto:britobriandaniel@gmail.com">britobriandaniel@gmail.com</a><br>
             📞 +54 9 3814090655
         </p>
